@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15
+    container_name: jobly-db
+    restart: always
+    environment:
+      POSTGRES_USER: jobly_user
+      POSTGRES_PASSWORD: secretpass
+      POSTGRES_DB: jobly_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - jobly_db_data:/var/lib/postgresql/data
+
+volumes:
+  jobly_db_data:

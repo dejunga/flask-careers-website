@@ -1,0 +1,14 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "jobly-Postgres",
+      "database": "jobly_db",
+      "username": "jobly_user",
+      "password": "secretpass"
+    }
+  ]
+}
